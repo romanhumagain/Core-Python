@@ -42,3 +42,14 @@ print(merged_list)  # output: [1, 2, 3, 4, 5, 6, 7, 8]
 # To check if element exists in a list or not
 
 print("Roman" in number_list)  # Output: False
+
+
+# To check if there any common elements between two lists
+list3 = [4,5,6,7]
+list4 = [7,8,9,6]
+
+for x in list3:
+  if x in list4:
+    print(f"{x} is there in {list4}")
+  else:
+    pass
