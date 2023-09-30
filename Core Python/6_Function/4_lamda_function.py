@@ -36,3 +36,6 @@ print(doubled)  # This will output [2, 4, 6, 8]
 evens = list(filter(lambda x: x%2 == 0, nums))
 print(evens)  # This will output [2, 4]
 
+# Using lamda function to get the odd number from the list
+odd_num = list(filter(lambda x : x%2 == 1, nums))  # [1, 3]
+print(odd_num)
