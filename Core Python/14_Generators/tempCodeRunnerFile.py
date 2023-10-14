@@ -1,0 +1,5 @@
+print(next(number))
+print(next(number))
+print(next(number))
+print(next(number))
+print(next(number))
