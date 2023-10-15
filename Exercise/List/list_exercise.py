@@ -23,3 +23,8 @@ for num in list2:
     pass
 
 print(f"The greatest number is {greatest_number} and smallest number is {smallest_number}")
+
+# list comprehension
+
+lst = [x for x in range(5)]
+print(lst)
