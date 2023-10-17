@@ -54,3 +54,6 @@ print(laptop.display())  # Brand: HP, Price: 1200
 
 print(laptop.price)  # 1200
  
+ 
+ 
+ 

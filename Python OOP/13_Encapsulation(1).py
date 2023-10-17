@@ -38,3 +38,61 @@ print(laptop.display())  # Brand: Dell, Price: 1000
 print(laptop.get_brand())  # Dell
 
 laptop.set_price(-10)  # ValueError: Price cannot be less than 0.
+
+
+
+class Car:
+  def __init__(self, windows, price, engine_type):
+    self.__window = windows
+    self.__price = price
+    self.__engine_type = engine_type
+    
+  # Using getter methods for the windows, price and engine_type
+  @property
+  def window(self):
+    return self.__window
+  
+  @property
+  def price(self):
+    return self.__price
+  
+  @property
+  def engine_type(self):
+    return self.__engine_type
+  
+  # Using setter methods for the windows, price and engine_type
+  @window.setter
+  def window(self, window):
+    self.__window = window
+    
+  @price.setter
+  def price(self, price):
+    if price < 0:
+      raise ValueError("Price Should Be Greater Than 0. ")
+    else:
+      self.__price = price
+      
+  @engine_type.setter   
+  def engine_type(self, engine_type):
+    self.__engine_type = engine_type
+  
+  
+  def display_details(self):
+    return f"Windows: {self.__window}, Price: {self.__price}, engine type: {self.__engine_type}"
+  
+car_obj = Car(4, 4000000, "EV")
+print(car_obj.engine_type)  # EV
+
+car_obj.price = 20000
+car_obj.engine_type = "Diesel"
+
+print(car_obj.display_details())
+# car_obj.set_engineType("Diesel")
+# print(car_obj.get_engine_type())  # Diesel
+
+# car_obj.set_price(-2)
+  
+  
+
+  
+    
